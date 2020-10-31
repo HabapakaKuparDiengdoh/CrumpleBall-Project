@@ -37,7 +37,7 @@ function setup() {
 	Engine.run(engine);
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true,restitution:1} );
 	World.add(world, ground);
-	World.add(world,bin1):
+	World.add(world,bin1);
 }
 
 
