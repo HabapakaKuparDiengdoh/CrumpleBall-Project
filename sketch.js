@@ -9,6 +9,7 @@ var bin1;
 var bin2;
 var bin3; 
 var engine,world;
+var ground;
 
 function preload()
 {
@@ -16,7 +17,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(1400, 700);
+	createCanvas(1500, 700,100,100);
 
 
 	engine = Engine.create();
@@ -36,6 +37,7 @@ function setup() {
 	Engine.run(engine);
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true,restitution:1} );
 	World.add(world, ground);
+	World.add(world,bin1):
 }
 
 
