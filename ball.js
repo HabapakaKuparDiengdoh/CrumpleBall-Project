@@ -7,7 +7,7 @@ class ball{
       }
       this.r=r
       this.body = Bodies.circle(x, y, this.r/2,options);
-
+this.image=loadImage("paper.png");
   
       World.add(world, this.body);
     }
@@ -17,9 +17,9 @@ class ball{
       push();
       translate(pos.x, pos.y);
 
-      ellipseMode(CENTER);
+      imageMode(CENTER);
       fill(255);
-      ellipse(0, 0, this.r, this.r);
+      image(this.image,0, 0, this.r, this.r);
       pop();
     }
   }; 
