@@ -8,6 +8,7 @@ var paper1;
 var bin1;
 var bin2;
 var bin3; 
+var bin4;
 var engine,world;
 var ground;
 
@@ -28,9 +29,10 @@ function setup() {
 
 	paper1=new ball(200,450,40);
 	
-	bin1=new dustbin(1200,540,20,200)
-	bin2=new dustbin(1120,630,150,20)
-	bin3=new dustbin(1050,540,20,200)
+	bin1=new dustbin(1250,540,20,200)
+	bin2=new dustbin(1150,630,250,20)
+	bin3=new dustbin(1000,520,20,250)
+	bin4=new dustbin(1200,500,300,300);
 	groundSprite=createSprite(700,650, width,10);
 	groundSprite.shapeColor=color("yellow")
 
@@ -48,7 +50,7 @@ function draw() {
   bin1.display();
   bin2.display();
   bin3.display();
-
+bin4.display();
 
   drawSprites();
  
