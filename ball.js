@@ -17,7 +17,7 @@ this.image=loadImage("paper.png");
       push();
       translate(pos.x, pos.y);
 
-      imageMode(CENTRE)
+      imageMode(CENTER)
       fill(255);
       image(this.image,0, 0, this.r, this.r);
       pop();
